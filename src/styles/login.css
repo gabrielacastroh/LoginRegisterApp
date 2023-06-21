@@ -1,0 +1,90 @@
+.containerApp {
+	height: 100vh;
+}
+
+.containerRight {
+	margin: 0;
+	position: relative;
+}
+
+.wave-container {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.containerTitleImg {
+	position: absolute;
+	transform: translate(-50%, -41%);
+	top: 50%;
+	left: 50%;
+}
+
+.task-title h1 {
+	position: absolute;
+	color: white;
+	font-size: 4rem;
+	transform: translate(-50%, -50%);
+	top: 1%;
+	left: 50%
+}
+
+.task-title h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1.5px #9553A0;
+}
+
+.task-title h1:nth-child(2) {
+	color: #9553A0;
+	animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+	0%,
+	100% {
+		clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+
+	50% {
+		clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+}
+
+.inputForm{
+	outline: rgba(0, 0, 0, 0) !important;
+	/* background-color: red !important; */
+}
+
+input {
+	box-shadow: none !important;
+}
+
+input:active, input:focus{
+	border: none;
+	outline: 2px inset #D0BAEA !important;
+}
+
+
+.buttonLogin{
+	border: 3px inset #D0BAEA !important;
+	width: 8rem;
+	background: linear-gradient(to left top, #d0baea, #d7c5ed, #dfd0f0, #e6dbf2, #ede6f5);
+	/* background: linear-gradient(to bottom, #D0BAEA, #ae96c7) !important; */
+	background-size: 0% 100% !important;
+	background-repeat: no-repeat !important;
+	background-position: 0 0 !important;
+	transition: background-size 0.5s ease-out !important;
+}
+
+.buttonLogin:hover {
+	background-size: 100% 100% !important; 
+ }
+
+
+/* .buttonLogin:hover {
+	background-color: #D0BAEA  !important;
+	outline: none !important;
+	font-weight: bold;
+	transition: 2s ease-out;
+	color: white;
+ }  */
