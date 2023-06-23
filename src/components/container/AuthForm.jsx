@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/login.css";
+import Login from "../pure/Login";
+import Signup from "../pure/Signup";
 
 const AuthForm = (props) => {
   const [selection, setSelection] = useState("login");
-  // const [loading, setLoading] = useState(false)
-  // const classes = stylesApp();
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     console.log(props.logged);
@@ -33,31 +36,33 @@ const AuthForm = (props) => {
               alignContent: "center",
             }}
           >
-            {/* {selection == "login" ? (
+            {selection == "login" ? (
               <Login
                 setLogged={props.setLogged}
+                setUser={props.setUser}
                 setSelection={setSelection}
-                nombre={props.nombre}
-                setNombre={props.setNombre}
-                email={props.email}
-                setEmail={props.setEmail}
-                password={props.password}
-                setPassword={props.setPassword}
+                nombre={nombre}
+                setNombre={setNombre}
+                email={email}
+                setEmail={setEmail}
+                password={password}
+                setPassword={setPassword}
               />
             ) : selection == "signup" ? (
               <Signup
                 setSelection={setSelection}
-                setLogged={props.setLogged}
-                nombre={props.nombre}
-                setNombre={props.setNombre}
-                email={props.email}
-                setEmail={props.setEmail}
-                password={props.password}
-                setPassword={props.setPassword}
+                  setLogged={props.setLogged}
+                setUser={props.setUser}
+                nombre={nombre}
+                setNombre={setNombre}
+                email={email}
+                setEmail={setEmail}
+                password={password}
+                setPassword={setPassword}
               />
             ) : (
               ""
-            )} */}
+            )}
           </div>
         </div>
         {/* CONTENEDOR DE LA DERECHA */}
