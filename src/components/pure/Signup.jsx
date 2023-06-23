@@ -168,7 +168,7 @@ const Signup = (props) => {
                 style={{ color: " #9553A0" }}
                 onClick={() => props.setSelection("login")}
               >
-                Sign Up
+                Login
               </button>
             </div>
           </div>
