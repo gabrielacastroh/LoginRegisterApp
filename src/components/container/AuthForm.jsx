@@ -77,7 +77,8 @@ const AuthForm = (props) => {
               {/* IMAGEN */}
               <img
                 style={{ width: "75%" }}
-                src="./../../assets/img/home_task.png"
+                src="https://raw.githubusercontent.com/gabrielacastroh/LoginRegisterApp/d3234d3c2e344b34021d9e80e673e401927b5ac7/src/assets/img/hometask.png"
+                // src="src\assets\img\hometask.png"
                 className="img-fluid"
                 alt="imagen-login"
               ></img>
